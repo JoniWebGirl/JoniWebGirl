@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /joniwebs.com/
+Disallow: /joniweiss.com/
+Disallow: /joniweisslmt.com/
+Disallow: /js/
+Disallow: /organicskincarewellness.com/
+Disallow: /save-orig/
+Sitemap: http://joniwebgirl.com/sitemap.xml
