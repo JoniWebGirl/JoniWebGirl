@@ -1,0 +1,6 @@
+[03-Mar-2015 22:16:59 America/Chicago] PHP Warning:  include(../footer.php): failed to open stream: No such file or directory in /home2/webgurl/public_html/joniwebs.com/sandbox/gallery1/index.php on line 98
+[03-Mar-2015 22:16:59 America/Chicago] PHP Warning:  include(../footer.php): failed to open stream: No such file or directory in /home2/webgurl/public_html/joniwebs.com/sandbox/gallery1/index.php on line 98
+[03-Mar-2015 22:16:59 America/Chicago] PHP Warning:  include(): Failed opening '../footer.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home2/webgurl/public_html/joniwebs.com/sandbox/gallery1/index.php on line 98
+[03-Mar-2015 22:19:13 America/Chicago] PHP Warning:  include(../footer.php): failed to open stream: No such file or directory in /home2/webgurl/public_html/joniwebs.com/sandbox/gallery1/index.php on line 98
+[03-Mar-2015 22:19:13 America/Chicago] PHP Warning:  include(../footer.php): failed to open stream: No such file or directory in /home2/webgurl/public_html/joniwebs.com/sandbox/gallery1/index.php on line 98
+[03-Mar-2015 22:19:13 America/Chicago] PHP Warning:  include(): Failed opening '../footer.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home2/webgurl/public_html/joniwebs.com/sandbox/gallery1/index.php on line 98
