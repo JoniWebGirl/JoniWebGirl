@@ -262,12 +262,12 @@ Media Queries
     ***************************************/
 
     #primary {
-        width: 50%;
+        width: 75%;
         float: left;
     }
 
     #secondary {
-        width: 40%;
+        width: 15%;
         float: right;
     }
 
