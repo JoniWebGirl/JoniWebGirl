@@ -24,6 +24,19 @@ h3 {
   margin: 0 0 1em 0;
 }
 
+figure {
+    display: inline-block;
+    border: 1px dotted #32a;
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    border: 1px dotted #32a;
+    text-align: center;
+}
+
 
 
 /**************************************
