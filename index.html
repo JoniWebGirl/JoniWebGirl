@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="hmp-app">
+<html lang="en">
   <head prefix="og: http://ogp.me/ns#">
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -78,38 +78,40 @@
                 <li>
                     <strong>Recent work:</strong>
                 </li>
-                <ul>
-                    <li>
-                        <strong>Jitterbug Coffee Hop -- Site Redesign</strong>
-                        <p>Summary: Conversion of existing site to a mobile-first, responsive web app using html5, css3, Zurb Foundation, and Angular.JS..</p>
-                        <figure>
-                            <a href="http://jitterbugcoffeehop.com/" target="_blank"><img src="portfolio/jitterbughome.png" alt="Image of site home page"></a>
-                            <figcaption>
-                                Site landing page -- link to Jitterbug Coffee Hop (October 2015)
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <strong>Event page for Utah Pride Center's &quot;Queer Continuum&quot; Conference</strong>
-                        <p>Summary: Using client-provided artwork, created a mobile-first, responsive web app using html5, css3, Zurb Foundation, and Angular.JS..</p>
-                        <figure>
-                            <a href="http://queercon.xyz/" target="_blank"><img src="portfolio/queercon2015.png" alt="Image of site home page"></a>
-                            <figcaption>
-                                Site landing page -- link to 2015 Queer Continuum Conference ( September 2015)
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <strong>Indexed photo gallery for DogMode.com</strong>
-                        <p>Summary: Mobile-responsive sub-section of existing site. Used CSS3 and HTML5 to create an attractive and engaging, mobile-friendly interface for their existing photo gallery while keeping with the sites original look and feel.</p>
-                        <figure>
-                            <a href="http://dogmode.com/gallery.html" target="_blank"><img src="portfolio/dogmodegallery.png" alt="Image of site Gallery page page"></a>
-                            <figcaption>
-                                Site landing page -- link to DogMode's new Photo Gallery(March 2015)
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
+                <li>
+                    <ul>
+                        <li>
+                            <strong>Jitterbug Coffee Hop -- Site Redesign</strong>
+                            <p>Summary: Conversion of existing site to a mobile-first, responsive web app using html5, css3, Zurb Foundation, and Angular.JS..</p>
+                            <figure>
+                                <a href="http://jitterbugcoffeehop.com/" target="_blank"><img src="portfolio/jitterbughome.png" alt="Image of site home page"></a>
+                                <figcaption>
+                                    Site landing page -- link to Jitterbug Coffee Hop (October 2015)
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <strong>Event page for Utah Pride Center's &quot;Queer Continuum&quot; Conference</strong>
+                            <p>Summary: Using client-provided artwork, created a mobile-first, responsive web app using html5, css3, Zurb Foundation, and Angular.JS..</p>
+                            <figure>
+                                <a href="http://queercon.xyz/" target="_blank"><img src="portfolio/queercon2015.png" alt="Image of site home page"></a>
+                                <figcaption>
+                                    Site landing page -- link to 2015 Queer Continuum Conference ( September 2015)
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <strong>Indexed photo gallery for DogMode.com</strong>
+                            <p>Summary: Mobile-responsive sub-section of existing site. Used CSS3 and HTML5 to create an attractive and engaging, mobile-friendly interface for their existing photo gallery while keeping with the sites original look and feel.</p>
+                            <figure>
+                                <a href="http://dogmode.com/gallery.html" target="_blank"><img src="portfolio/dogmodegallery.png" alt="Image of site Gallery page page"></a>
+                                <figcaption>
+                                    Site landing page -- link to DogMode's new Photo Gallery(March 2015)
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </li>
                 <li>
                     <strong>Current projects that I'm involved with:</strong>
                     <ul>
@@ -132,11 +134,10 @@
                     </ul>
                 </li>
             </ul>
-
       </section>
 
-      <section id="secondary">
-        <div ng-app="myapp" ng-controller="WeatherCtrl">
+      <section id="secondary" ng-app="myapp">
+        <div ng-controller="WeatherCtrl">
           <h3>Salt Lake City Weather</h3>
           <weather-icon cloudiness="{{ weather.clouds }}"></weather-icon>
           <h4>Current: {{ weather.temp.current | temp:0 }}</h4>
@@ -150,7 +151,8 @@
         <a href="http://facebook.com/joniwebgirl"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
         <p>&copy; 2014 Joni Weiss.</p>
       </footer>
-    </div> <!-- id: wrapper -->
+    </div>
+
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="js/angular-sanitize.min.js"></script>

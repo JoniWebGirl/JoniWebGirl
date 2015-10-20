@@ -3,10 +3,10 @@
 var myapp = angular.module('myapp', []);
 
 myapp.factory('weatherService', function($http) {
-    return { 
+    return {
       getWeather: function() {
         var weather = { temp: {}, clouds: null };
-        $http.jsonp('http://api.openweathermap.org/data/2.5/weather?zip=84101,us&units=imperial&callback=JSON_CALLBACK').success(function(data) {
+        $http.jsonp('http://api.openweathermap.org/data/2.5/weather?id=5780993&units=imperial&callback=JSON_CALLBACK&APPID=1e9ba1b71199cb8294b2b980b57da468').success(function(data) {
             if (data) {
                 if (data.main) {
                     weather.temp.current = data.main.temp;
@@ -19,7 +19,7 @@ myapp.factory('weatherService', function($http) {
 
         return weather;
       }
-    }; 
+    };
 });
 
 myapp.filter('temp', function($filter) {
