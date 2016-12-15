@@ -5,8 +5,10 @@ var myapp = angular.module('myapp', []);
 myapp.factory('weatherService', function($http) {
     return {
       getWeather: function() {
+          var key = 'bee0c017e13a0f95';
         var weather = { temp: {}, clouds: null };
         $http.jsonp('http://api.openweathermap.org/data/2.5/weather?id=5780993&units=imperial&callback=JSON_CALLBACK&APPID=1e9ba1b71199cb8294b2b980b57da468').success(function(data) {
+            console.log(data);
             if (data) {
                 if (data.main) {
                     weather.temp.current = data.main.temp;
