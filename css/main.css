@@ -1,15 +1,25 @@
 /**************************************
 GENERAL
 ***************************************/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
 
 body {
+  box-sizing: inherit;
   font-family: 'Open Sans', sans-serif;
 }
 
-#wrapper {
-  max-width: 940px;
+div#wrapper {
+  position: relative;
+  top: 15vw;
+  width: 100%
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 5%;
 }
 
 a {
@@ -24,17 +34,32 @@ h3 {
   margin: 0 0 1em 0;
 }
 
+figure {
+    display: inline-block;
+    border: 1px dotted #32a;
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    border: 1px dotted #32a;
+    text-align: center;
+}
+
 
 
 /**************************************
 HEADING
 ***************************************/
-
-header {
+.header--mod {
+  position: fixed;
   float: left;
   margin: 0 0 30px 0;
   padding: 5px 0 0 0;
   width: 100%;
+  top: 0;
+  z-index: 10;
 }
 
 #logo {
@@ -62,23 +87,23 @@ h2 {
 NAVIGATION
 ***************************************/
 
-nav {
+.navbar-custom {
  text-align: center;
   padding: 10px 0;
   margin: 20px 0 0;
 }
 
-nav ul {
+.navbar-custom ul {
   list-style: none;
   margin: 0 10px;
   padding: 0;
 }
 
-nav li {
+.navbar-custom li {
     display: inline-block;
 }
 
-nav a {
+.navbar-custom a {
   font-weight: 800;
   padding: 15px 10px;
 }
@@ -194,11 +219,11 @@ body {
 
 /* header */
 header{
-/*
-  background: #6ab47b;
+
+  background: royalblue;
   border-color: #599a68;
-*/
-    background:
+
+    /*background:
         radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%,
             rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
         radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%,
@@ -217,7 +242,7 @@ header{
             90%, #e27412 100%);
     background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px,
         530px 530px, 730px 730px, 100% 100%;
-    background-color: #840b2a;
+    background-color: #840b2a;*/
 }
 
 /* nav background on mobile */
@@ -248,4 +273,97 @@ nav a, nav a:visited {
 /* selected nav link */
 nav a.selected, nav a:hover {
   color: #32a;
+}
+
+/**************************************
+Media Queries
+***************************************/
+@media screen and (min-width: 480px) {
+
+
+
+    /**************************************
+    TWO COLUMN LAYOUT
+    ***************************************/
+
+    #primary {
+        width: 75%;
+        float: left;
+    }
+
+    #secondary {
+        width: 15%;
+        float: right;
+    }
+
+    #contactform {
+        clear: both;
+        width: 100%;
+    }
+    /**************************************
+    Calulation of percentages needed for images and margins for
+    Three-column layout:
+    3 images * (2.5 + 2.5 - margins) = 15%
+    100% - 15% = 85%
+    85% / 3 images = 28.33333333333 width per image
+    ***************************************/
+    /**************************************
+    PAGE: PORTFOLIO
+    ***************************************/
+
+    #gallery li {
+        width: 28.3333%;
+    }
+
+    #gallery li:nth-child(4n) {
+        clear: left;
+    }
+
+    /**************************************
+    PAGE: ABOUT
+    ***************************************/
+
+    .profile-photo {
+        float: left;
+        margin: 0 5% 80px 0;
+    }
+
+
+}
+
+@media screen and (min-width: 660px) {
+
+    /**************************************
+    HEADER
+    ***************************************/
+    nav {
+        background: none;
+        float: right;
+        font-size: 1.125em;
+        margin-right: 5%;
+        text-align: right;
+        width: 45%;
+    }
+
+    #logo {
+        float: left;
+        margin-left: 5%;
+        text-align: left;
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 0.825em;
+        margin-bottom: 20px;
+    }
+
+    header {
+        border-bottom: 5px solid #32a;
+        /*margin-bottom: 60px;*/
+    }
+
 }
